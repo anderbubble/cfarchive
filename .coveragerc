@@ -1,0 +1,3 @@
+[run]
+source = cfarchive
+omit = cfarchive/test*
