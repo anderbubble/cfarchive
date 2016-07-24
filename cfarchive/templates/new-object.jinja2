@@ -1,0 +1,22 @@
+{% extends "layout.jinja2" %}
+
+{% block title %}
+upload
+{% endblock title %}
+
+{% block content %}
+<h1>New object</h1>
+
+<h2>Upload</h2>
+
+<form
+  action="{{ request.route_url('create_object', request_method='POST') }}"
+  method="post"
+  accept-charset="utf-8"
+  enctype="multipart/form-data">
+
+  <label>File</label>
+  <input name="file" type="file">
+  <input name="submit" value="upload" type="submit">
+</form>
+{% endblock content %}
